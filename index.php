@@ -26,9 +26,10 @@
             'title' => 'Perché il mio account è associato a un paese?',
             'descriptions' => [
 
-                'description_1' => 'Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:
-                
-                 <ol> 
+                ' description_1' => 'Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:',
+
+                'description_2' => 
+                '<ol> 
 
                     <li> La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti: </li>
                     
@@ -43,7 +44,7 @@
 
                 </ol> ',
 
-                'description_2' => 'Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.'
+                'description_3' => 'Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.'
             ]
         ],
 
@@ -79,14 +80,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>Domande frequenti - Privacy e termini - google</title>
 </head>
 <body>
     
-    <header></header>
+    <header>
+        <div class="header-top">
+            <div class="htop-sx">
+                <img class="pad-lr-5" src="https://1000marche.net/wp-content/uploads/2020/03/Google-logo.png" alt="logo google">
+                <div class="pad-lr-5">Privacy e termini</div>
+            </div>
+            <div class="htop-dx">
+                <i class="fas fa-grip-vertical mgr_20"></i>
+                <i class="fas fa-grip-vertical mgr_20"></i>
+            </div>
+
+        </div>
+        <div class="header-bottom">
+            <ul>
+                <li>Introduzione</li>    
+                <li>Norme sulla privacy</li>    
+                <li>Termini di servizio</li>    
+                <li>Tecnologie</li>    
+                <li>Domande frequenti</li>    
+            </ul>
+        </div>
+        <hr>
+
+    
+    </header>
         
     <main>
+
         <div class="contenitore">
 
             <?php foreach ($faq as $value) { ?>
@@ -96,7 +125,7 @@
                 <?php foreach ($value['descriptions'] as $element) { ?>
                     
                     
-                    <p><?php echo $element ?></p>
+                    <div class="descrizione"><?php echo $element ?></div>
     
     
                 <?php }?>
@@ -109,7 +138,9 @@
 
     </main>
 
-    <footer></footer>
+    <footer>
+
+    </footer>
 
 
 

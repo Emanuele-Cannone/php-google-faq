@@ -1,8 +1,72 @@
-/* *{
+/* header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+/* non capisco perchè non posso usarlo... */
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} */
+    font-family: 'Roboto', sans-serif;
+}
+
+hr{
+    color: #4f515350;
+}
+
+h2{
+    color: #3c4043;
+    font-family: 'Google Sans',sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 64px 0 0 0;
+}
+
+.pad-lr-5{
+    padding: 0 5px;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5f6368;
+}
+
+.header-top [class*='htop']{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.htop-sx{
+    font-size: 1.7rem;
+}
+
+.htop-sx img{
+    height: 45px;
+}
+
+.htop-dx > i{
+    font-size: 1.2rem;
+    padding: 0 5px;
+}
+
+.header-bottom ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-bottom ul li {
+    color: #3c4043;
+    list-style: none;
+    padding-right: 10px;
+}
 
 .contenitore{
     width: 100%;
@@ -10,9 +74,14 @@
     margin: auto;
 }
 
-p{
+.descrizione{
     line-height: 1.6;
     padding: 20px 0;
+    color: rgba(0,0,0,0.87);
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
 }
 
 li{
