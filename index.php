@@ -139,7 +139,22 @@
     </main>
 
     <footer>
-
+        <div class="contenitore">
+            <div class="foot-l">
+                <ul>
+                    <li>Google</li>
+                    <li>Tutto su Google</li>
+                    <li>Privacy</li>
+                    <li>Termini</li>
+                </ul>
+            </div>
+            <div class="foot-r">
+                <select name="ciao">
+                    <option value="Italiano">Italiano</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+        </div>
     </footer>
 
 
