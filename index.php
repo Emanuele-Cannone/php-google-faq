@@ -27,10 +27,21 @@
             'title' => 'Perché il mio account è associato a un paese?',
             'descriptions' => [
                 'description_1' => 'Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:',
-                'description_2' => '<ol> <li> La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti: </li>',
-                'description_3' => '<ol type="a"> <li> Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera. </li>',
-                'description_4' => '<li> Google LLC, con sede negli Stati Uniti, per il resto del mondo. </li> </ol>',
-                'description_5' => '<li> La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li> </ol> ',
+                'description_2' => 
+                ' <ol> 
+
+                    <li> La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti: </li>
+                    
+                    <ol type="a">
+
+                        <li> Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera. </li>
+                        <li> Google LLC, con sede negli Stati Uniti, per il resto del mondo. </li>
+                    
+                    </ol>
+                    
+                    <li> La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
+
+                </ol> ',
                 'description_6' => 'Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.'
             ]
         ],
@@ -67,26 +78,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Domande frequenti - Privacy e termini - google</title>
 </head>
 <body>
     
+    <header></header>
         
-    <?php foreach ($faq as $value) { ?>
+    <main>
+        <div class="contenitore">
 
-        <h2><?php echo $value['title']?></h2>
-        
-        <?php foreach ($value['descriptions'] as $element) { ?>
-            
-            
-            <p><?php echo $element ?></p>
+            <?php foreach ($faq as $value) { ?>
+    
+                <h2><?php echo $value['title']?></h2>
+                
+                <?php foreach ($value['descriptions'] as $element) { ?>
+                    
+                    
+                    <p><?php echo $element ?></p>
+    
+    
+                <?php }?>
+                
+                
+            <?php }?>
 
+        </div>
+    
 
-        <?php }?>
-        
-        
-    <?php }?>
+    </main>
 
+    <footer></footer>
 
 
 
