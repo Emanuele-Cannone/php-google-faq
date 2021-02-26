@@ -66,10 +66,13 @@ Usate con saggezza i cicli  -->
 </head>
 <body>
     
-    <?php foreach ($faq as $key => $element) { ?>
 
-        <h2><?php echo $element['title'] ?></h2>
+        <?php foreach ($faq as $k => $value) { ?>
+            <h2><?php var_dump($k)?></h2>
+        <?php }?>
 
-    <?php } ?>
+
+
+
 </body>
 </html>
